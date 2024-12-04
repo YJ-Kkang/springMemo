@@ -1,6 +1,7 @@
 package com.example.memo.controller;
 
 import com.example.memo.dto.MemoRequestDto;
+import com.example.memo.dto.MemoResponseDto;
 import com.example.memo.entity.Memo;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,5 +27,7 @@ public class MemoController {
         //Inmemory DB에 Memo 저장(자바의 맵절 구조를 사용하여 그 안에 저장)
         //키값은 memoId, 저장될 객체 형태는 memo
         memoList.put(memoId, memo);
+
+        return new MemoResponseDto();
     }
 }
