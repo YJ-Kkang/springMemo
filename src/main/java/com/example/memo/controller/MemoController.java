@@ -24,5 +24,7 @@ public class MemoController {
         Memo memo = new Memo(memoId, dto.getTitle(), dto.getContents());
 
         //Inmemory DB에 Memo 저장(자바의 맵절 구조를 사용하여 그 안에 저장)
+        //키값은 memoId, 저장될 객체 형태는 memo
+        memoList.put(memoId, memo);
     }
 }
