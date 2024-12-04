@@ -32,6 +32,6 @@ public class MemoController {
         //키값은 memoId, 저장될 객체 형태는 memo
         memoList.put(memoId, memo);
 
-        return new MemoResponseDto(memo);
+        return new MemoResponseDto(memo); //에러 발생
     }
 }
