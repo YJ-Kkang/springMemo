@@ -32,4 +32,13 @@ public class MemoController {
 
         return new MemoResponseDto(memo);
     }
+
+    @GetMapping("/{id}")
+    public MemoResponseDto findMemoById(@PathVariable Long id) {
+        Memo memo = memoList.get(id);
+
+        return new MemoResponseDto(memo);
+    }
+
+
 }
