@@ -9,6 +9,9 @@ public class MemoRequestDto {
     private String title;
     private String contents;
 
+    //기본 생성자
+    public MemoRequestDto() {}
+
     //memo 객체가 RequestDto 형태로 바껴서 응답이 되어야 함
     public MemoRequestDto(Memo memo) {
         this.id = memo.getId();
