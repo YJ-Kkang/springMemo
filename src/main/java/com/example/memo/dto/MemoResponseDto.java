@@ -15,4 +15,5 @@ public class MemoResponseDto {
         this.title = memo.getTitle();
         this.contents = memo.getContents();
     }
+    
 }
